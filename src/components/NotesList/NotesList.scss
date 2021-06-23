@@ -1,0 +1,61 @@
+.notes_list-container {
+  background: aliceblue;
+  width: 350px;
+  min-height: 200px;
+  max-height: 800px;
+  height: auto;
+  border-radius: 5px;
+
+
+  .header {
+    display: flex;
+    margin: 4px 4px 25px 15px;
+    justify-content: space-between;
+
+
+    .header-text {
+      text-align: left;
+      font-weight: bold;
+      font-size: 23px;
+      color: rgba(19,31,55,1);
+    }
+
+    .header-amount {
+      font-size: 14px;
+      color: rgb(141, 141, 141);
+    }
+  }
+
+  .note-item {
+    border-bottom: 1px solid rgba(141, 141, 141, 0.4);
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    overflow-wrap: break-word;
+
+    .flex-container {
+      display: flex;
+      user-select: none;
+    }
+
+    .note-text {
+      text-align: left;
+      margin-left: 10px;
+      font-size: 15px;
+      font-weight: 500;
+      color: rgba(19,31,55,1);
+      margin-bottom: 2px;
+      user-select: auto;
+    }
+
+    .note-tags {
+      margin-left: 10px;
+      text-align: left;
+      font-size: 13px;
+      color: rgb(141, 141, 141);
+    }
+  }
+
+  .note-item:last-child {
+    margin-bottom: 0;
+  }
+}
